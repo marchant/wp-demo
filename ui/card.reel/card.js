@@ -1,16 +1,16 @@
 /**
- * @module ui/post.reel
+ * @module ui/card.reel
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component;
 
 /**
- * @class Post
+ * @class Card
  * @extends Component
  */
-exports.Post = Component.specialize(/** @lends Post# */ {
+exports.Card = Component.specialize(/** @lends Card# */ {
     constructor: {
-        value: function Post() {
+        value: function Card() {
             this.super();
         }
     }
