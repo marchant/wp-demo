@@ -146,7 +146,18 @@
             ]
         },
         "postsController": {
-            "prototype": "montage/core/range-controller"
+            "prototype": "montage/core/range-controller",
+            "bindings": {
+                "content": {"<-": "@wordpressConnector.posts"}
+            }
+        },
+        "wordpressConnector": {
+            "prototype": "montage-wordpress/core/wordpress-connector",
+            "properties": {
+                "categoryFilter": "featured",
+                "host": "demo.phault.net",
+                "path": "posts"
+            }
         }
     }
     </script>
